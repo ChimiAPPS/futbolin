@@ -9,6 +9,7 @@ import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { ApiProvider } from '../providers/api/api';
+import { UserProvider } from '../providers/user/user';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ApiProvider } from '../providers/api/api';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     GoogleMaps,
-    ApiProvider
+    ApiProvider,
+    UserProvider
   ]
 })
 export class AppModule {}
