@@ -1,0 +1,35 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-title>Sign up</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form #form="ngForm" (ngSubmit)="signup(form)">
+    <ion-item class="transparent">
+      <ion-label floating>Alias</ion-label>
+      <ion-input type="text" required [(ngModel)]="user.alias" ngControl="alias" name="alias"></ion-input>
+    </ion-item>
+    <ion-item class="transparent">
+      <ion-label floating>Firstname</ion-label>
+      <ion-input type="text" required [(ngModel)]="user.firstname" ngControl="firstname" name="firstname"></ion-input>
+    </ion-item>
+    <ion-item class="transparent">
+      <ion-label floating>Lastname</ion-label>
+      <ion-input type="text" required [(ngModel)]="user.lastname" ngControl="lastname" name="lastname"></ion-input>
+    </ion-item>
+    <ion-item class="transparent">
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email" required [(ngModel)]="user.email" ngControl="email" name="email"></ion-input>
+    </ion-item>
+    <ion-item class="transparent">
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" required [(ngModel)]="user.password" ngControl="password" name="password"></ion-input>
+    </ion-item>
+    <ion-item class="transparent">
+      <ion-label floating>Confirm Password</ion-label>
+      <ion-input type="password" required [(ngModel)]="user.confirm_password" ngControl="confirm_password" name="confirm_password"></ion-input>
+    </ion-item>
+    <button ion-button type="submit" block round class="btn">Sign up</button>
+  </form>
+</ion-content>

@@ -6,8 +6,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { GoogleMaps } from '@ionic-native/google-maps';
 
 import { MyApp } from './app.component';
-import { LoginPage } from '../pages/login/login';
+
 import { HomePage } from '../pages/home/home';
+import { WelcomePage } from '../pages/welcome/welcome';
+import { LoginPage } from '../pages/login/login';
+import { SignupPage } from '../pages/signup/signup';
+
 import { ApiProvider } from '../providers/api/api';
 import { UserProvider } from '../providers/user/user';
 
@@ -15,7 +19,9 @@ import { UserProvider } from '../providers/user/user';
   declarations: [
     MyApp,
     HomePage,
-    LoginPage
+    WelcomePage,
+    LoginPage,
+    SignupPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +31,9 @@ import { UserProvider } from '../providers/user/user';
   entryComponents: [
     MyApp,
     HomePage,
-    LoginPage
+    WelcomePage,
+    LoginPage,
+    SignupPage
   ],
   providers: [
     StatusBar,

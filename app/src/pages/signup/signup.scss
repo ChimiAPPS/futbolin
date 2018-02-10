@@ -1,5 +1,4 @@
-page-login {
-  
+page-signup {
   ion-content{
     background: url('../assets/imgs/wallpaper_1.jpg');
     background-repeat: no-repeat;
@@ -11,23 +10,15 @@ page-login {
     background: transparent;
   }
 
-  ion-content .container{
-    padding-top: 10%;
+  form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  ion-content .container ion-item{
-    width: 80%;
-  }
-
-  ion-content .container .btn{
+  form button.btn{
     margin-top: 3em;
-    width: 50%;
+    width: 60%;
   }
-
-  
-
 }
